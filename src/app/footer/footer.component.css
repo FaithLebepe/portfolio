@@ -1,0 +1,46 @@
+.footer {
+  background-color: #081b29;
+  color: #ededed;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-name {
+  font-size: 28px;
+  color: #0ef;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-size: 16px;
+  font-style: italic;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.download-btn {
+  background-color: #0ef !important;
+  color: #081b29 !important;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #0ef;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #0ef, 0 0 25px #0ef;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
