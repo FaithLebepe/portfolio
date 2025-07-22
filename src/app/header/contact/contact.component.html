@@ -1,39 +1,10 @@
-<section class="contact-wrapper" id="contact">
-  <!-- Left: Contact Form -->
-  <div class="contact-form">
-    <h2 class="contact-title">Contact <span>Me</span></h2>
-    <form (submit)="onSubmit()" #contactForm="ngForm">
-      <mat-form-field appearance="fill">
-        <mat-label>Name</mat-label>
-        <input matInput required [(ngModel)]="formData.name" name="name" />
-      </mat-form-field>
-
-      <mat-form-field appearance="fill">
-        <mat-label>Email</mat-label>
-        <input matInput type="email" required [(ngModel)]="formData.email" name="email" />
-      </mat-form-field>
-
-      <mat-form-field appearance="fill">
-        <mat-label>Message</mat-label>
-        <textarea matInput rows="4" required [(ngModel)]="formData.message" name="message"></textarea>
-      </mat-form-field>
-
-      <button mat-raised-button color="accent" type="submit" class="submit-btn">Send</button>
-    </form>
-  </div>
-
-  <!-- Right: Testimonials -->
-  <div class="testimonial-section">
-    <h2 class="testimonial-title">Testimonial<span></span></h2>
-    <div class="testimonial-list">
-      <div class="testimonial-card" *ngFor="let t of testimonials">
-        <img [src]="t.image" alt="{{ t.name }}" />
-        <p>{{ t.message }}</p>
-        <div class="testimonial-name">{{ t.name }}</div>
-        <div class="testimonial-stars">
-          <i class='bx bxs-star' *ngFor="let star of [1,2,3,4,5]"></i>
-        </div>
-      </div>
-    </div>
-  </div>
+<section id="contact">
+<div class="contact-center">
+  <h1>Get in touch</h1>
+  <h2>Let's Work Together</h2>
+  <p>
+    I'm open for new opportunities - especially ambitious or large projects. However, my inbox is always open. Whether you have a question or just want catch up over coffee and have a chat, I'll try my best to get back to you!
+  </p>
+  <a href="mailto:faithlebepe@gmail.com" class="email-btn">Buy me Coffee</a>
+</div>
 </section>

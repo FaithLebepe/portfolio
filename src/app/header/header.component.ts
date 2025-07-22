@@ -11,10 +11,17 @@ export class HeaderComponent {
 
   isScrolled = false;
   isMenuOpen = false;
+  lastScrollTop = 0;
+  hideNavbar = false;
+
+ 
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 20;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    this.hideNavbar = scrollTop > this.lastScrollTop && scrollTop > 100;
+    this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   }
   
   toggleMenu(){
@@ -27,5 +34,7 @@ export class HeaderComponent {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+ 
 
 }

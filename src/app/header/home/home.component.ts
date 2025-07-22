@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { AboutComponent } from "../about/about.component";
 import { SkillsComponent } from "../skills/skills.component";
 import { ProjectsComponent } from "../projects/projects.component";
@@ -9,11 +10,12 @@ import Typed from 'typed.js';
 import { ServicesComponent } from "../services/services.component";
 import { HeaderComponent } from "../header.component";
 import { FooterComponent } from "../../footer/footer.component";
+import { TestimonialsComponent } from "../testimonials/testimonials.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [AboutComponent, SkillsComponent, ProjectsComponent, ContactComponent, ServicesComponent, HeaderComponent, FooterComponent],
+  imports: [RouterModule, AboutComponent, SkillsComponent, ProjectsComponent, ContactComponent, ServicesComponent, HeaderComponent, FooterComponent, TestimonialsComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

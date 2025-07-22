@@ -1,12 +1,20 @@
-<div class="header">
+<div class="header" [class.hide]="hideNavbar">
   <a href="#" class="logo">Faith.</a>
-  <nav class="navbar">
+  <!-- Menu Toggle -->
+<div class="menu-toggle" [class.open]="isMenuOpen" (click)="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  <nav class="navbar" [class.open]="isMenuOpen">
+
     <ul class="nav-menu" [class.open]="isMenuOpen">
       <li><a mat-button class="nav-link" href="#home" (click)="scrollToSection('home'); isMenuOpen = false">HOME</a></li>
       <li><a mat-button class="nav-link" href="#about" (click)="scrollToSection('about'); isMenuOpen = false">ABOUT</a></li>
       <li><a mat-button class="nav-link" href="#skills" (click)="scrollToSection('skills'); isMenuOpen = false">SKILLS</a></li>
       <li><a mat-button class="nav-link" href="#projects" (click)="scrollToSection('projects'); isMenuOpen = false">PROJECTS</a></li>
-      <li><a mat-button class="nav-link" href="#services" (click)="scrollToSection('services'); isMenuOpen = false">SERVICES</a></li>
+      <li><a mat-button class="nav-link" href="#testimonials" (click)="scrollToSection('testimonials'); isMenuOpen = false">TESTIMONIALS</a></li>
       <li><a mat-button class="nav-link" href="#contact" (click)="scrollToSection('contact'); isMenuOpen = false">CONTACT</a></li>
     </ul>
   </nav>
