@@ -31,7 +31,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/letteringjs/jquery.lettering.js"
+            ]
           },
           "configurations": {
             "production": {

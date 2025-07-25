@@ -29,4 +29,12 @@ export class HomeComponent implements OnInit {
       loop: true
     });
   }
+
+  scrollToAbout() {
+  const aboutSection = document.getElementById('about');
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 }

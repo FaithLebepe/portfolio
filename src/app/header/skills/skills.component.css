@@ -112,7 +112,7 @@
 }
 
 .progress-line.typescript span {
-    width: 50%;
+    width: 60%;
 }
 
 .progress-line.angular span {
@@ -124,30 +124,30 @@
 }
 
 .progress-line.java span {
-    width: 60%;
+    width: 68%;
 }
 
 .progress-line.python span {
-    width: 70%;
+    width: 60%;
 }
 
 .progress-line.c-sharp span {
-    width: 70%;
+    width: 65%;
 }
 
 .progress-line.c-plus-plus span {
-    width: 40%;
+    width: 30%;
 }
 
 .progress-line.mysql span {
-    width: 75%;
+    width: 60%;
 }
 
 .progress-line.git span {
-    width: 70%;
+    width: 60%;
 }
 .progress-line.firebase span {
-  width: 80%; 
+  width: 70%; 
 
 }
 

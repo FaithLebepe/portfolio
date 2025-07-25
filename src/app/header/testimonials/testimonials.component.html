@@ -1,17 +1,32 @@
 <section class="testimonial-wrapper" id="testimonials">
   <div class="testimonial-section">
     <h2 class="testimonial-title">
-    What my <span class="highlight">mentors</span> and <span class="highlight">collaborators</span> say about me
+      What my <span class="highlight">mentors</span> and
+      <span class="highlight">collaborators</span> say about me
     </h2>
+
     <div class="testimonial-list">
       <div class="testimonial-card" *ngFor="let t of testimonials">
         <img [src]="t.image" alt="{{ t.name }}" />
-        <p>{{ t.message }}</p>
+        <p>
+          {{ getPreview(t.message) }}
+          <span *ngIf="t.message.length > 200" class="read-more" (click)="openModal(t)">Read More</span>
+        </p>
         <div class="testimonial-name">{{ t.name }}</div>
+        <div class="testimonial-title-small">{{ t.title }}</div>
         <div class="testimonial-stars">
           <i class='bx bxs-star' *ngFor="let star of [1,2,3,4,5]"></i>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" *ngIf="modalVisible" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="modal-close" (click)="closeModal()">✕</button>
+      <h3>{{ selectedTestimonial?.name }}</h3>
+      <p>{{ selectedTestimonial?.message }}</p>
     </div>
   </div>
 </section>
