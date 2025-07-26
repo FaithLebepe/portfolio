@@ -43,7 +43,7 @@
     margin-left:2px ;
 }
 
-.heading1 {
+.animate .heading1 {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -51,33 +51,33 @@
     margin-bottom: 50px;
 }
 
-.bar {
+.animate .bar {
     font-size: 23px;
     margin-bottom: 20px;
 }
 
 
 
-.Technical-bars .bar:first-child {
+.animate .Technical-bars .bar:first-child {
     margin-top: 0;
 }
 
-.Technical-bars .bar:last-child {
+.animate .Technical-bars .bar:last-child {
     margin-bottom: 5px;
 }
 
-.Technical-bars .bar .info {
+.animate .Technical-bars .bar .info {
     margin-bottom: 5px;
 }
 
-.Technical-bars .bar .info span {
+.animate .Technical-bars .bar .info span {
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
 
-.Technical-bars .bar .progress-line {
+.animate .Technical-bars .bar .progress-line {
     position: relative;
     border-radius: 10px;
     width: 100%;
@@ -93,7 +93,7 @@
     }
 }
 
-.Technical-bars .bar .progress-line span {
+.animate .Technical-bars .bar .progress-line span {
     position: absolute;
     border-radius: 10px;
     height: 100%;
@@ -103,55 +103,55 @@
     transform-origin: left;
 }
 
-.progress-line.html span {
+.animate .progress-line.html span {
     width: 90%;
 }
  
-.progress-line.css span {
+.animate .progress-line.css span {
     width: 85%;
 }
 
-.progress-line.typescript span {
+.animate .progress-line.typescript span {
     width: 60%;
 }
 
-.progress-line.angular span {
+.animate .progress-line.angular span {
     width: 70%;
 }
 
-.progress-line.ionic span {
+.animate .progress-line.ionic span {
     width: 90%;
 }
 
-.progress-line.java span {
+.animate .progress-line.java span {
     width: 68%;
 }
 
-.progress-line.python span {
+.animate .progress-line.python span {
     width: 60%;
 }
 
-.progress-line.c-sharp span {
+.animate .progress-line.c-sharp span {
     width: 65%;
 }
 
-.progress-line.c-plus-plus span {
+.animate .progress-line.c-plus-plus span {
     width: 30%;
 }
 
-.progress-line.mysql span {
+.animate .progress-line.mysql span {
     width: 60%;
 }
 
-.progress-line.git span {
+.animate .progress-line.git span {
     width: 60%;
 }
-.progress-line.firebase span {
+.animate .progress-line.firebase span {
   width: 70%; 
 
 }
 
-.progress-line span::before {
+.animate .progress-line span::before {
     content: "";
     position: absolute;
     width: 0;
@@ -173,7 +173,7 @@
 }
 
 
-.radial-bars {
+.animate .radial-bars {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -181,14 +181,14 @@
     align-items: flex-start;
 }
  
-.radial-bars .radial-bar {
+.animate .radial-bars .radial-bar {
     width: 50%;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
 }
 
-.radial-bars .radial-bar svg {
+.animate .radial-bars .radial-bar svg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -197,7 +197,7 @@
     height: 160px;
 }
 
-.radial-bars .radial-bar .progress-bar{
+.animate .radial-bars .radial-bar .progress-bar{
     stroke-width: 10;
     stop-color: black;
     fill: transparent;
@@ -213,7 +213,7 @@
     }
 }
 
-.path {
+.animate .path {
     stroke-width: 10;
     stroke: #0ef;
     fill: transparent;
@@ -222,10 +222,10 @@
     stroke-linecap: round;
 }
 
-.path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path2 1s 1s linear forwards;}
-.path-3{animation: animate-path3 1s 1s linear forwards;}
-.path-4{animation: animate-path4 1s 1s linear forwards;}
+.animate .path-1{animation: animate-path1 1s 1s linear forwards;}
+.animate .path-2{animation: animate-path2 1s 1s linear forwards;}
+.animate .path-3{animation: animate-path3 1s 1s linear forwards;}
+.animate .path-4{animation: animate-path4 1s 1s linear forwards;}
 
 @keyframes animate-path1 {
     100% {

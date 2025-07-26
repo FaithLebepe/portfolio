@@ -87,7 +87,19 @@ export class AppComponent {
   }
 
   animateCursor();
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, { threshold: 0.9 }); 
+
+  const sections = document.querySelectorAll('.animate-on-scroll');
+  sections.forEach(section => observer.observe(section));
 }
+
 
 
 }
